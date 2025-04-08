@@ -1,0 +1,315 @@
+%% Template Tesis FEB UGM v0.1
+%% Copyright 2019 by Nofie Iman http://nofieiman.com/
+%%
+%% This work may be distributed and/or modified under the
+%% conditions of the LaTeX Project Public License.
+%% 
+%% The Current Maintainer of this work is Nofie Iman,
+%% nofie.iman@ugm.ac.id.
+%%
+%% This work consists of the files:
+%% - tesis.tex
+%% - tesis.synctex.gz
+%% - tesis.pdf
+%% - logo.jpg
+%% - average.png
+%% - regression.png
+%%
+%% Template ini disusun untuk membantu penulisan skripsi/
+%% tesis/disertasi mahasiswa, khususnya di lingkungan FEB UGM.
+%%
+%% Pembaruan terakhir 9 Desember 2019.
+
+\documentclass[12pt,hidelinks]{report}
+% A LaTeX document starts with the command \documentclass [option] {type}. The most common document-classes in LaTex are: book, report, article, letter.
+
+% Encoding
+\usepackage[utf8]{inputenc} % it only loads characters that can be displayed by the font encoding. deal with Unicode source (especially with non-latin scripts)
+
+% Mengatur spasi secara umum, bisa juga diganti dengan [doublespacing]
+\usepackage[onehalfspacing]{setspace}
+
+% Memungkinkan penggunaan gambar
+\usepackage{graphicx}
+
+% Pilihan Bahasa Indonesia
+\usepackage[bahasa]{babel}
+
+% Untuk table multirow
+\usepackage{multirow}
+
+% Untuk table dengan midrule, toprule, dsb
+\usepackage{booktabs}
+
+% References
+\usepackage[authoryear]{natbib}
+
+% Document properties. Isikan dengan informasi yang relevan dengan 
+\usepackage[pdftex,
+            pdfauthor={Nama Mahasiswa},
+            pdftitle={Judul Dokumen},
+            pdfsubject={Topik Dokumen},
+            pdfkeywords={keyword1, keyword2, keywordn}]{hyperref}
+
+% Mulai dokumen
+\begin{document}
+
+% Halaman judul. Ganti dengan variabel yang relevan.
+\begin{titlepage}
+   \begin{center}
+       \vspace*{1cm}
+   \begin{large}
+    \textbf{Judul Tesis} \\
+ \end{large}
+       \vspace{1.5cm}
+ %       Subjudul Tesis % Bisa ditambah bila diperlukan
+  %    \vspace{1.5cm} \\
+Tesis\\
+       disusun untuk memperoleh gelar sarjana\\
+       Sarjana Magister
+       \vspace{0.8cm} \\
+  \includegraphics[scale=0.50]{logo.jpg}
+       \vfill
+        \textbf{Nama Mahasiswa}\\
+        \textbf{NIM 123/XYZ/456789/000}\\
+       \vspace{1.8cm}
+       Nama Fakultas \\
+       Universitas Gadjah Mada\\
+      Bulan Tahun
+   \end{center}
+\end{titlepage}
+
+% Halaman inti
+
+\chapter*{Abstrak}
+\addcontentsline{toc}{chapter}{Abstrak}
+Fames ac turpis egestas maecenas pharetra. Viverra nibh cras pulvinar mattis nunc sed blandit libero. Diam in arcu cursus euismod quis. Facilisi etiam dignissim diam quis enim lobortis scelerisque. Ut porttitor leo a diam sollicitudin tempor id eu. Semper eget duis at tellus at urna condimentum mattis pellentesque. Aliquet enim tortor at auctor urna nunc id.
+
+Quisque non tellus orci ac auctor augue. Sapien pellentesque habitant morbi tristique senectus et netus et malesuada. Eget aliquet nibh praesent tristique magna sit amet. Fames ac turpis egestas integer eget. Et tortor at risus viverra adipiscing at in tellus integer. Tempus imperdiet nulla malesuada pellentesque elit. Malesuada pellentesque elit eget gravida cum sociis. Ante metus dictum at tempor.
+
+\vspace{0.5cm}
+
+\textbf{Kata kunci}: lorem, ipsum, dolor, sit, amet
+ 
+ 
+ \chapter*{Abstract}
+ \addcontentsline{toc}{chapter}{Abstract}
+ Fames ac turpis egestas maecenas pharetra. Viverra nibh cras pulvinar mattis nunc sed blandit libero. Diam in arcu cursus euismod quis. Facilisi etiam dignissim diam quis enim lobortis scelerisque. Ut porttitor leo a diam sollicitudin tempor id eu. Semper eget duis at tellus at urna condimentum mattis pellentesque. Aliquet enim tortor at auctor urna nunc id.
+ 
+ Quisque non tellus orci ac auctor augue. Sapien pellentesque habitant morbi tristique senectus et netus et malesuada. Eget aliquet nibh praesent tristique magna sit amet. Fames ac turpis egestas integer eget. Et tortor at risus viverra adipiscing at in tellus integer. Tempus imperdiet nulla malesuada pellentesque elit. Malesuada pellentesque elit eget gravida cum sociis. Ante metus dictum at tempor.
+ 
+ \vspace{0.5cm}
+ 
+ \textbf{Keywords}: lorem, ipsum, dolor, sit, amet
+ 
+\chapter*{Halaman Persembahan}
+\addcontentsline{toc}{chapter}{Halaman Persembahan}
+Fames ac turpis egestas maecenas pharetra. Viverra nibh cras pulvinar mattis nunc sed blandit libero. Diam in arcu cursus euismod quis. Facilisi etiam dignissim diam quis enim lobortis scelerisque. Ut porttitor leo a diam sollicitudin tempor id eu. Semper eget duis at tellus at urna condimentum mattis pellentesque. Aliquet enim tortor at auctor urna nunc id.
+
+Quisque non tellus orci ac auctor augue. Sapien pellentesque habitant morbi tristique senectus et netus et malesuada. Eget aliquet nibh praesent tristique magna sit amet. Fames ac turpis egestas integer eget. Et tortor at risus viverra adipiscing at in tellus integer. Tempus imperdiet nulla malesuada pellentesque elit. Malesuada pellentesque elit eget gravida cum sociis. Ante metus dictum at tempor.
+ 
+\chapter*{Pernyataan Keaslian}
+\addcontentsline{toc}{chapter}{Pernyataan Keaslian}
+Fames ac turpis egestas maecenas pharetra. Viverra nibh cras pulvinar mattis nunc sed blandit libero. Diam in arcu cursus euismod quis. Facilisi etiam dignissim diam quis enim lobortis scelerisque. Ut porttitor leo a diam sollicitudin tempor id eu. Semper eget duis at tellus at urna condimentum mattis pellentesque. Aliquet enim tortor at auctor urna nunc id.
+
+Quisque non tellus orci ac auctor augue. Sapien pellentesque habitant morbi tristique senectus et netus et malesuada. Eget aliquet nibh praesent tristique magna sit amet. Fames ac turpis egestas integer eget. Et tortor at risus viverra adipiscing at in tellus integer. Tempus imperdiet nulla malesuada pellentesque elit. Malesuada pellentesque elit eget gravida cum sociis. Ante metus dictum at tempor.
+ 
+\chapter*{Ucapan Terima Kasih}
+\addcontentsline{toc}{chapter}{Ucapan Terima Kasih}
+Fames ac turpis egestas maecenas pharetra. Viverra nibh cras pulvinar mattis nunc sed blandit libero. Diam in arcu cursus euismod quis. Facilisi etiam dignissim diam quis enim lobortis scelerisque. Ut porttitor leo a diam sollicitudin tempor id eu. Semper eget duis at tellus at urna condimentum mattis pellentesque. Aliquet enim tortor at auctor urna nunc id.
+
+Quisque non tellus orci ac auctor augue. Sapien pellentesque habitant morbi tristique senectus et netus et malesuada. Eget aliquet nibh praesent tristique magna sit amet. Fames ac turpis egestas integer eget. Et tortor at risus viverra adipiscing at in tellus integer. Tempus imperdiet nulla malesuada pellentesque elit. Malesuada pellentesque elit eget gravida cum sociis. Ante metus dictum at tempor.
+ 
+% Daftar pustaka
+\tableofcontents
+\addcontentsline{toc}{chapter}{Daftar Isi}
+
+% Daftar tabel
+\listoftables
+\addcontentsline{toc}{chapter}{Daftar Tabel}
+
+% Daftar gambar
+\listoffigures
+\addcontentsline{toc}{chapter}{Daftar Gambar}
+
+\chapter{Pendahuluan}
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo \textbf{teks ini dicetak tebal} consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, \textit{teks ini dicetak miring} sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+\section{Latar Belakang}
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
+
+\section{Rumusan Masalah}
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
+
+\section{Pertanyaan Penelitian}
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+\begin{enumerate}
+  \item Imperdiet nulla malesuada pellentesque elit eget gravida cum sociis. Etiam dignissim diam quis enim lobortis scelerisque. Amet purus gravida quis blandit turpis
+  \item Purus semper eget duis at tellus at. Pharetra massa massa ultricies mi quis. Elit pellentesque habitant morbi tristique senectus et. Elit pellentesque habitant morbi tristique senectus et netus.
+  \item Ultrices tincidunt arcu non sodales neque sodales. Dictum sit amet justo donec enim. Sed augue lacus viverra vitae congue eu
+\end{enumerate}
+
+\section{Lingkup Penelitian}
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
+
+\section{Struktur Laporan}
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
+
+\chapter{Landasan Teori}
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+\section{Rerangka Konseptual}
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
+
+\begin{figure}[t]
+\includegraphics[width=\textwidth]{average.png}
+    \caption{Your first figure.}
+Source: Bloomberg (2009)
+    \label{tab:fig1}
+\centering
+\end{figure}
+
+\section{Penyusunan Hipotesis}
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+\section{Penelitian Terdahulu}
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+\chapter{Metode Penelitian}
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+\section{Pendekatan dan Justifikasi}
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
+ 
+\section{Pemilihan Sampel}
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
+
+\section{Metode Analisis}
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
+
+\chapter{Hasil dan Pembahasan}
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+\begin{table}[h!]
+  \begin{center}
+    \caption{Your first table.}
+    \label{tab:table1}
+    \begin{tabular}{l|c|r} % <-- Alignments: 1st column left, 2nd middle and 3rd right, with vertical lines in between
+      \textbf{Value 1} & \textbf{Value 2} & \textbf{Value 3}\\
+      $\alpha$ & $\beta$ & $\gamma$ \\
+      \hline
+      1 & 1110.1 & a\\
+      2 & 10.1 & b\\
+      3 & 23.113231 & c\\
+    \end{tabular}
+  \end{center}
+\end{table}
+
+
+\section{Statistik Deskriptif}
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
+
+
+
+\begin{table}[h!]
+\begin{center}
+    \caption{Your second table.}
+    \label{tab:table2}
+\begin{tabular}{ |c|c|c|c| } 
+\hline
+col1 & col2 & col3 \\
+\hline
+\multirow{3}{4em}{Multiple row} & cell2 & cell3 \\  % multirow harus pakai usepackage diaktifkan
+& cell5 & cell6 \\ 
+& cell8 & cell9 \\ 
+\hline
+\end{tabular}
+\end{center}
+\end{table}
+
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
+
+\section{Pengujian Hipotesis}
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
+ 
+\begin{table}[h!]
+\begin{center}
+    \caption{Your last table.}
+    \label{tab:table3}
+\begin{tabular}{@{} cccc @{}}
+\toprule
+Topology & Avg.\ Delay & Avg.\ Bandwidth & Hosts \\
+& (s) & (kbps) & \\
+\midrule
+Low & 0.0994 & 2441.85 & \multirow{2}{*}{64} \\
+High & 0.1424 & 2515.77  & \\[2ex]
+Low & 0.2522 & 1798.60 & \multirow{2}{*}{128} \\
+High & 0.1113 & 2123.17  & \\
+\bottomrule
+\end{tabular}
+\end{center}
+\end{table}
+% Lihat https://en.wikibooks.org/wiki/LaTeX/Tables sebagai referensi
+% 'cheating' cara praktis membuat table: https://www.latex-tables.com/
+
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+\begin{figure}[t]
+\includegraphics[width=\textwidth]{regression.png}
+    \caption{Regression analysis.}
+Source: Citadel-Mosi (2012)
+    \label{tab:fig2}
+\centering
+\end{figure}
+
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+\chapter{Simpulan}
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+\section{Implikasi Penelitian}
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
+
+\section{Keterbatasan Penelitian}
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
+
+\section{Saran dan Rekomendasi}
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
+
+
+% Halaman referensi (untuk sementara  ditambahkan secara manual, tidak menggunakan biber/bib)
+\begin{thebibliography}{99}
+\bibitem[Chatfield (2012)]{chatfield2012} Chatfield, T. (2012). \textit{How to Thrive in the Digital Age}. London: Macmillan.
+
+\addcontentsline{toc}{chapter}{Bibliografi}
+
+\bibitem[Diagne (2018)]{diagne2018} Diagne, S. B. (2018). \textit{Open to Reason: Muslim Philosophers in Conversation with the Western Tradition}. New York: Columbia University Press.
+
+\bibitem[Ihde (1993)]{ihde1993} Ihde, D (1993). \textit{Philosophy of Technology: An Introduction}. New York: Paragon.
+
+\bibitem[Newport (2019)]{newport2019} Newport, C. (2019). \textit{Digital Minimalism: Choosing a Focused Life in a Noisy World}. Penguin.
+
+\bibitem[Seldon \& Abidoye (2018)]{seldonabidoye2018} Seldon, A., \& Abidoye, O. (2018). \textit{The Fourth Education Revolution: Will Artificial Intelligence Liberate or Infantilise Humanity?} The University of Buckingham Press.
+
+\end{thebibliography}
+
+
+% Halaman appendiks/lampiran
+\appendix
+\chapter{Kuesioner Penelitian}
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+\chapter{Hasil Regresi}
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+\chapter{Transkrip Wawancara}
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+\begin{itemize}
+  \item Imperdiet nulla malesuada pellentesque elit eget gravida cum sociis. Etiam dignissim diam quis enim lobortis scelerisque. Amet purus gravida quis blandit turpis
+  \item Purus semper eget duis at tellus at. Pharetra massa massa ultricies mi quis. Elit pellentesque habitant morbi tristique senectus et. Elit pellentesque habitant morbi tristique senectus et netus.
+  \item Ultrices tincidunt arcu non sodales neque sodales. Dictum sit amet justo donec enim. Sed augue lacus viverra vitae congue eu
+\end{itemize}
+
+
+\end{document}
